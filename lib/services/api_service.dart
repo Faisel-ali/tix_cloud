@@ -26,7 +26,7 @@ class ApiService {
 
       else {
         // Use your Mac's actual IP address on the same Wi‑Fi
-        return 'http://192.168.100.47:5040/api';
+        return 'https://glycr.onrender.com/api';
       }
     }
     if (Platform.isIOS) {
