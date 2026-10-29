@@ -14,13 +14,13 @@ bool get isEmulator {
 
 
 class ApiService {
-  //static const String baseUrl = 'http://localhost:5040/api';
+  //static const String baseUrl = 'https://glycr.onrender.com/api'';
 
   static String get baseUrl {
-    if (kIsWeb) return 'http://localhost:5040/api';
+    if (kIsWeb) return 'https://glycr.onrender.com/api';
     if (Platform.isAndroid) {
       if (isEmulator) {
-        return 'http://10.0.2.2:5040/api';
+        return 'https://glycr.onrender.com/api';
       }
 
 
@@ -30,9 +30,9 @@ class ApiService {
       }
     }
     if (Platform.isIOS) {
-      return 'http://localhost:5040/api';
+      return 'https://glycr.onrender.com/api';
     }
-    return 'http://localhost:5040/api';
+    return 'https://glycr.onrender.com/api';
   }
 
   final String? _token;
